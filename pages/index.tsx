@@ -53,8 +53,8 @@ const Home = () => (
         </Link>
       </li>
       <li>
-        <Link href="/dashboard">
-          <a>dashboard</a>
+        <Link href="/movie">
+          <a>movie</a>
         </Link>
       </li>
     </ul>
