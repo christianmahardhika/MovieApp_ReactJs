@@ -1,16 +1,14 @@
 import MovieComponent from "./components/MovieComponent";
-import React,{useEffect, useState} from "react";
+import React,{useState, useEffect} from "react";
 import styled from 'styled-components';
+import MovieRepository from "./repository/MovieRepository";
 
 export default function Movie() {
-  const API_KEY="FILL MEEEE~!"
-  const FEATURED_API="https://api.themoviedb.org/3/discover/movie?api_key="+API_KEY+"&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1"
-  const SEARCH_API="https://api.themoviedb.org/3/search/company?api_key="+API_KEY+"&query="
-
+  // const SEARCH_API="https://api.themoviedb.org/3/search/company?api_key="+API_KEY+"&query="
   const [movies, setMovies] = useState([]);
-  useEffect(() => {
-    fetch(FEATURED_API).then(res=>res.json()).then((data)=>{console.log(data); setMovies(data.results)})
-  })
+    useEffect(() => {
+      MovieRepository.DiscoverMovies().then(res => { console.log(res.results); setMovies(res.results)})
+      })
   return (<div>
     <h1>React Movie Apps</h1>
     <MovieContainer>
