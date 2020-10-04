@@ -57,7 +57,7 @@ export default function Home() {
             </Container>
             <Container style = {{ marginTop : '40px' }}>
                 <Grid>
-                    <Grid.Row style = {{ padding : '0px' }} only = 'computer'>
+                    <Grid.Row style = {{ padding : '0px' }} only = 'computer tablet'>
                         <Grid.Column width = '4'>
                             <Card style = {{ height: '300px' }}>
                                 <Image src='https://images.unsplash.com/photo-1546795729-f3a5d42087f5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2700&q=80' wrapped ui={false} />
@@ -79,9 +79,116 @@ export default function Home() {
                             <PbClassCardComingSoon message = 'Coming soon'/>
                         </Grid.Column>
                     </Grid.Row>
-                    <Grid.Row style = {{ padding : '0px' }} only = 'tablet mobile'>
+                    <Grid.Row style = {{ padding : '0px' }} only = 'mobile'>
                         <Grid.Column width = '16'>
-                            <PbClassCardComingSoon message = 'Coming soon'/>
+                            <Card style = {{ height: '300px', width: '100%' }}>
+                                <Image 
+                                    src = 'https://images.unsplash.com/photo-1546795729-f3a5d42087f5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2700&q=80' 
+                                    style = {{ height: '200px', objectFit: 'cover' }}
+                                />
+                                <Card.Content>
+                                    <Card.Header style = {{ marginTop: '8px' }}>Matlab</Card.Header>
+                                    <Card.Meta>
+                                        <span className='date'>Lorem ipsum lena color sit amet amet, consectetur adipiscing elit. Risus donec dolor lectus.</span>
+                                    </Card.Meta>
+                                </Card.Content>
+                            </Card>
+                        </Grid.Column>
+                    </Grid.Row>
+                    <Grid.Row style = {{ padding : '0px' }} only = 'mobile'>
+                        <Grid.Column width = '16'>
+                            <Card style = {{ height: '300px', width: '100%' }}>
+                                <Image 
+                                    src = 'https://images.unsplash.com/photo-1546795729-f3a5d42087f5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2700&q=80' 
+                                    style = {{ height: '200px', objectFit: 'cover' }}
+                                />
+                                <Card.Content>
+                                    <Card.Header style = {{ marginTop: '8px' }}>Matlab</Card.Header>
+                                    <Card.Meta>
+                                        <span className='date'>Lorem ipsum lena color sit amet amet, consectetur adipiscing elit. Risus donec dolor lectus.</span>
+                                    </Card.Meta>
+                                </Card.Content>
+                            </Card>
+                        </Grid.Column>
+                    </Grid.Row>
+                    <Grid.Row style = {{ padding : '0px' }} only = 'mobile'>
+                        <Grid.Column width = '16'>
+                            <Card style = {{ height: '300px', width: '100%' }}>
+                                <Image 
+                                    src = 'https://images.unsplash.com/photo-1546795729-f3a5d42087f5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2700&q=80' 
+                                    style = {{ height: '200px', objectFit: 'cover' }}
+                                />
+                                <Card.Content>
+                                    <Card.Header style = {{ marginTop: '8px' }}>Matlab</Card.Header>
+                                    <Card.Meta>
+                                        <span className='date'>Lorem ipsum lena color sit amet amet, consectetur adipiscing elit. Risus donec dolor lectus.</span>
+                                    </Card.Meta>
+                                </Card.Content>
+                            </Card>
+                        </Grid.Column>
+                    </Grid.Row>
+                    <Grid.Row style = {{ padding : '0px' }} only = 'mobile'>
+                        <Grid.Column width = '16'>
+                            <Card style = {{ height: '300px', width: '100%' }}>
+                                <Image 
+                                    src = 'https://images.unsplash.com/photo-1546795729-f3a5d42087f5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2700&q=80' 
+                                    style = {{ height: '200px', objectFit: 'cover' }}
+                                />
+                                <Card.Content>
+                                    <Card.Header style = {{ marginTop: '8px' }}>Matlab</Card.Header>
+                                    <Card.Meta>
+                                        <span className='date'>Lorem ipsum lena color sit amet amet, consectetur adipiscing elit. Risus donec dolor lectus.</span>
+                                    </Card.Meta>
+                                </Card.Content>
+                            </Card>
+                        </Grid.Column>
+                    </Grid.Row>
+                    <Grid.Row style = {{ padding : '0px' }} only = 'mobile'>
+                        <Grid.Column width = '16'>
+                            <Card style = {{ height: '300px', width: '100%' }}>
+                                <Image 
+                                    src = 'https://images.unsplash.com/photo-1546795729-f3a5d42087f5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2700&q=80' 
+                                    style = {{ height: '200px', objectFit: 'cover' }}
+                                />
+                                <Card.Content>
+                                    <Card.Header style = {{ marginTop: '8px' }}>Matlab</Card.Header>
+                                    <Card.Meta>
+                                        <span className='date'>Lorem ipsum lena color sit amet amet, consectetur adipiscing elit. Risus donec dolor lectus.</span>
+                                    </Card.Meta>
+                                </Card.Content>
+                            </Card>
+                        </Grid.Column>
+                    </Grid.Row>
+                    <Grid.Row style = {{ padding : '0px' }} only = 'mobile'>
+                        <Grid.Column width = '16'>
+                            <Card style = {{ height: '300px', width: '100%' }}>
+                                <Image 
+                                    src = 'https://images.unsplash.com/photo-1546795729-f3a5d42087f5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2700&q=80' 
+                                    style = {{ height: '200px', objectFit: 'cover' }}
+                                />
+                                <Card.Content>
+                                    <Card.Header style = {{ marginTop: '8px' }}>Matlab</Card.Header>
+                                    <Card.Meta>
+                                        <span className='date'>Lorem ipsum lena color sit amet amet, consectetur adipiscing elit. Risus donec dolor lectus.</span>
+                                    </Card.Meta>
+                                </Card.Content>
+                            </Card>
+                        </Grid.Column>
+                    </Grid.Row>
+                    <Grid.Row style = {{ padding : '0px' }} only = 'mobile'>
+                        <Grid.Column width = '16'>
+                            <Card style = {{ height: '300px', width: '100%' }}>
+                                <Image 
+                                    src = 'https://images.unsplash.com/photo-1546795729-f3a5d42087f5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2700&q=80' 
+                                    style = {{ height: '200px', objectFit: 'cover' }}
+                                />
+                                <Card.Content>
+                                    <Card.Header style = {{ marginTop: '8px' }}>Matlab</Card.Header>
+                                    <Card.Meta>
+                                        <span className='date'>Lorem ipsum lena color sit amet amet, consectetur adipiscing elit. Risus donec dolor lectus.</span>
+                                    </Card.Meta>
+                                </Card.Content>
+                            </Card>
                         </Grid.Column>
                     </Grid.Row>
                 </Grid>
