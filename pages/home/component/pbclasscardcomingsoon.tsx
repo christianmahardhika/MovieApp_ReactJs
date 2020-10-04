@@ -1,16 +1,12 @@
 import { Card } from "semantic-ui-react";
-import styled, {css} from 'styled-components';
+import styled from 'styled-components';
 import { PbHeader } from './pbheader';
 
 interface PbClassCardComingSoonProps {
     message: String
 }
 
-export const PbClassCardComingSoon = (
-    {
-        message
-    }: PbClassCardComingSoonProps
-) => {
+export const PbClassCardComingSoon = ({  message } : PbClassCardComingSoonProps) => {
     return (
         <Card style = {{ height: '300px', width: '100%' }}>
             <PbComingSoonContainer>

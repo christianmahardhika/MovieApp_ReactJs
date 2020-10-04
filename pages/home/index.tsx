@@ -1,4 +1,4 @@
-import { Card, Container, Grid, Header, Image } from "semantic-ui-react";
+import { Card, Container, Grid, Image } from "semantic-ui-react";
 import { PbClassCardComingSoon } from "./component/PbClassCardComingSoon";
 import { PbHeader } from "./component/pbheader";
 import { PbHeaderBgContainer } from "./component/pbheaderbgcontainer";
