@@ -4,7 +4,6 @@ import styled from 'styled-components';
 export const PbHeaderBgContainer = styled(Container)`
     && {
         width: 100%;
-        padding: 30px;
         margin: 0px !important;
         height: 460px;
         background-size: cover;
