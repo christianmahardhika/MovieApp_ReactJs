@@ -18,7 +18,14 @@ export default function Home() {
                                 </PbHeader>
                             </Grid.Column>
                         </Grid.Row> 
-                        <Grid.Row style = {{ marginTop: '110px' }}>
+                        <Grid.Row style = {{ marginTop: '100px' }} only = 'computer'>
+                            <Grid.Column mobile = {10} tablet = {10} computer = {6}>
+                                <PbHeader as = 'h1' color = 'white'>
+                                    Selamat Datang di
+                                </PbHeader>
+                            </Grid.Column>
+                        </Grid.Row>
+                        <Grid.Row style = {{ marginTop: '80px' }} only = 'tablet mobile'>
                             <Grid.Column mobile = {10} tablet = {10} computer = {6}>
                                 <PbHeader as = 'h1' color = 'white'>
                                     Selamat Datang di
