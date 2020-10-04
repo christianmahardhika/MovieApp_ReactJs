@@ -7,7 +7,7 @@ export default function Home() {
         <div>
             <Grid.Row>
                 <PbHeaderBgContainer headerimageurl = 'https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2700&q=80'>
-                    <Container style = {{ paddingTop: '30px', margin: '0px !important' }}>
+                    <Container style = {{ paddingTop: '30px' }}>
                         <Grid>
                             <Grid.Row>
                                 <Grid.Column textAlign = "left" mobile = {3} tablet = {3} computer = {1}>
