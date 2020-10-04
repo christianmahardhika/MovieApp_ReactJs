@@ -32,6 +32,7 @@ export default MovieComponent
 const CardMargin = styled.div`
   margin: 10px;
 `;
+
 const RatingContainer = styled.div`
   display: flex;
   justify-content: space-between;
