@@ -1,7 +1,7 @@
 import MovieComponent from "../../components/MovieComponent/MovieComponent";
 import React from "react";
 import styled from 'styled-components';
-import MovieUsecase from "../../store/movieservices/usecase/MovieUsecase";
+import MovieUsecase from "./usecase/MovieUsecase";
 import { Divider, Loader } from "semantic-ui-react";
 
 export default function Movie() {

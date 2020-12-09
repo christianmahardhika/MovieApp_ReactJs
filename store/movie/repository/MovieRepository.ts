@@ -1,6 +1,6 @@
 import MovieRepositoryInterface from "./MovieRepositoryInterface";
-import { Api, customParams} from "./api";
-import { BaseResponse, Movie } from "./response";
+import { Api, customParams} from "../api";
+import { BaseResponse, Movie } from "../model/response";
 
 class MovieRepository implements MovieRepositoryInterface {
     async DiscoverMovies(): Promise<BaseResponse<[Movie]>> {

@@ -10,7 +10,7 @@ The idea of this repo is to bring DDD into frontend.
  index.tsx 
  /public
  /store
-  /domain
+  /movie (Domain)
     /repository
     /base
  /styles

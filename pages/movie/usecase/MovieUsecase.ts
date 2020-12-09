@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import MovieRepository from "../repository/MovieRepository";
-import { Movie } from "../repository/response";
+import MovieRepository from "../../../store/movie/repository/MovieRepository";
+import { Movie } from "../../../store/movie/model/response";
 
 export default new class MovieUsecase {
     getMovies() {
