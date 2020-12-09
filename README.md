@@ -7,11 +7,17 @@ The idea of this repo is to bring DDD into frontend.
  /components
  /pages
   /movie
+    /useCase
+    MovieUseCase.ts
+  index.ts
  index.tsx 
  /public
  /store
   /movie (Domain)
     /repository
-    /base
+      movieRepository.ts
+      movieRepositoryInterface.ts
+    /model
+      response.ts
  /styles
  ```
