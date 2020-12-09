@@ -1,15 +1,13 @@
-// Todo
-
-import React,{useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import MovieRepository from "../repository/MovieRepository";
-// import { BaseResponse } from "../repository/response";
+import { Movie } from "../repository/response";
 
-export default function MovieUsecase() {
-    const [movies, setMovies] = useState([]);
-    useEffect(() => {
-        MovieRepository.DiscoverMovies().then(res => { return setMovies(res.results);})
-      })
-    return(
-        movies
-    )
+export default new class MovieUsecase {
+    getMovies() {
+        const [movies, setMovies] = useState<[Movie]>();
+        useEffect(() => {
+            MovieRepository.DiscoverMovies().then(res => setMovies(res.results))
+        }, [])
+        return movies
+    }
 }

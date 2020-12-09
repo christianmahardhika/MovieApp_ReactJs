@@ -5,7 +5,7 @@ export const Api = axios.create({
 })
 
 export function customParams(params: any) {
-    params['api_key'] = ''
+    params['api_key'] = '<API-KEY>'
     params['language'] = 'en-US'
     return params
 }

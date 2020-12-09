@@ -1,25 +1,23 @@
 import MovieComponent from "./components/MovieComponent";
-import React, { useState, useEffect } from "react";
+import React from "react";
 import styled from 'styled-components';
 import MovieUsecase from "../../store/movieservices/usecase/MovieUsecase";
-// import MovieRepository from "../../store/movieservices/repository/MovieRepository"
+import { Divider, Loader } from "semantic-ui-react";
 
 export default function Movie() {
-  // const SEARCH_API="https://api.themoviedb.org/3/search/company?api_key="+API_KEY+"&query="
-  // const [movies, setMovies] = useState([]);
-  // useEffect(() => {
-  //   MovieRepository.DiscoverMovies().then(res => { console.log(res.results); setMovies(res.results)})
-  //   })
-  const moviess = MovieUsecase()
-  console.log(moviess)
-  return (<div>
-    <h1>React Movie Apps</h1>
-    <MovieContainer>
-      {moviess.length > 0 && moviess.map((movie) =>
-        (<MovieComponent {...movie} />)
-      )}
-    </MovieContainer>
-  </div>)
+  const movies = MovieUsecase.getMovies()
+  if (movies === undefined) {
+    return (<Loader/>)
+  } else {
+    return (<div>
+      <h1>React Movie Apps</h1>
+      <MovieContainer>
+        {movies.length > 0 && movies.map((movie) =>
+          (<MovieComponent {...movie} />)
+        )}
+      </MovieContainer>
+    </div>)
+  }
 }
 
 const MovieContainer = styled.div`
